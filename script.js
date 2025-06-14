@@ -7,8 +7,8 @@ let viewOutputElement = document.getElementById("viewOutput");
 let updateInputElement = document.getElementById('updateTask');
 
 
-const addTask = addbuttonElement.addEventListener('click', () => {
-    const inputValue = addTaskElement.value;
+    addbuttonElement.addEventListener('click', () => {
+    let inputValue = addTaskElement.value;
     DataArray.push(inputValue);
     addTaskElement.value = '';
     viewOutputElement.innerHTML = '';
@@ -21,9 +21,6 @@ const addTask = addbuttonElement.addEventListener('click', () => {
         deleteButton.textContent = "delete";
         deleteButton.addEventListener('click', () => {
             DataArray.splice(index,1);
-            if (DataArray.length === 1){
-                DataArray = [];
-            }
             console.log(DataArray, DataArray.length);
             listItem.remove();
         });
@@ -36,8 +33,6 @@ const addTask = addbuttonElement.addEventListener('click', () => {
             console.log(DataArray.at(index))
             DataArray[index] = updateInputElement.value;
 
-
-            
             // get value from update box
             // listItem.textContent = value of update box
             listItem.textContent = updateInputElement.value; 
@@ -55,7 +50,3 @@ const addTask = addbuttonElement.addEventListener('click', () => {
     console.log(taskList)
     viewOutputElement.appendChild(taskList)
 });
-
-// const viewTask = viewbuttonElement.addEventListener('click', () => {
-
-// });

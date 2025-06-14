@@ -4,23 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joe's To-Do-List</title>
-    <link rel="stylesheet" href="s.css">
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
-    <h1>To-Do-list</h1>
-        
-        <input type="text" id="addTask">
-        <button id="addButton">add task</button>
-        </br>
-        <input type="text" id="updateTask">
+    <h1 id="title">To-Do-List</h1>
+    <h2 id="instruction">To-Do-list's Instruction: <br>
+        1. Add =new task in the input box then press the "add task" to add it.<br>
+        2. If want to edit task, type the new task in edit task input box then, press "update" button next to the desire task.<br>
+        3. If want to delete task, press the delete button next to the task you want to delete.</h2>
+    
 
+    <br>
 
+    <label>Add New Task Here:</label>
+    <input type="text" id="addTask">
+    <button id="addButton">add task</button>
 
+    <br>
 
+    <lable>Edit Task Here(Press Update Button):</lable>
+    <br>
+    <input type="text" id="updateTask">
+       
+    <h2>Current Task:</h2>
 
-
+    <div id="outputbox">
         <div id="viewOutput"></div>
+    </div>
+
     <script src="script.js"></script>
+
 </body>
 </html>

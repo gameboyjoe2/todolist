@@ -1,0 +1,70 @@
+body {
+  background-color: #FAF9F6;
+  color: #2F2F2F;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Title */
+#title {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 1%;
+  margin-bottom: 1%;
+  font-style: italic;
+}
+
+/* Instructions */
+#instruction {
+  
+  border: 2px solid #A3C4BC;
+  border-radius: 5%;
+  display: inline-block;
+  padding: 10px;
+  width: 500px;
+  height: 220px;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Inputs */
+input[type="text"] {
+  background-color: #FFFFFF;
+  border: 2px solid #A3C4BC;
+  padding: 5px;
+  width: 300px;
+  font-size: 14px;
+  color: #2F2F2F;
+}
+
+/* Buttons */
+button {
+  background-color: #6B9080;
+  color: white;
+  border: 1px solid #2F2F2F;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+/* Output Box */
+#outputbox {
+  margin-top: 30px;
+  border: 2px solid #A3C4BC;
+  padding: 10px;
+  width: 500px;
+  background-color: #FFFFFF;
+}
+
+/* View Output Area */
+#viewOutput {
+  margin-top: 10px;
+}
